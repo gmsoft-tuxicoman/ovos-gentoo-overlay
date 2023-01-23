@@ -59,6 +59,13 @@ python_install_all() {
 	fowners ovos:ovos /var/log/ovos
 	keepdir /etc/mycroft
 	fowners ovos:ovos /etc/mycroft
+
+	doinitd "${FILESDIR}/ovos-messagebus"
+
+
+	insinto /etc/mycroft
+	doins "${FILESDIR}/mycroft.conf"
+	fowners ovos:ovos -R /etc/mycroft
 }
 
 distutils_enable_tests pytest

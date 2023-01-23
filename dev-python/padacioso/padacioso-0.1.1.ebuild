@@ -7,9 +7,9 @@ DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_10 )
 inherit distutils-r1
 
-DESCRIPTION="Chunks strings into byte sized pieces."
-HOMEPAGE="https://github.com/OpenJarbas/quebra_frases"
-SRC_URI="https://github.com/OpenJarbas/quebra_frases/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="dead simple regex based intent parser"
+HOMEPAGE="https://github.com/OpenJarbas/padacioso"
+SRC_URI="https://github.com/OpenJarbas/padacioso/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${PN/-/_}-${PV}"
 
 LICENSE="Apache-2.0"
