@@ -51,6 +51,7 @@ DEPEND="acct-user/ovos
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+export MYCROFT_LOOSE_REQUIREMENTS=true
 
 python_install_all() {
 
@@ -58,15 +59,13 @@ python_install_all() {
 
 	keepdir /var/log/ovos
 	fowners ovos:ovos /var/log/ovos
-	keepdir /etc/mycroft
-	fowners ovos:ovos /etc/mycroft
 
 	doinitd "${FILESDIR}/ovos-messagebus"
 
 
-	insinto /etc/mycroft
-	doins "${FILESDIR}/mycroft.conf"
-	fowners ovos:ovos -R /etc/mycroft
+	insinto /etc/OpenVoiceOS
+	doins "${FILESDIR}/ovos.conf"
+	fowners ovos:ovos -R /etc/OpenVoiceOS
 }
 
 distutils_enable_tests pytest
