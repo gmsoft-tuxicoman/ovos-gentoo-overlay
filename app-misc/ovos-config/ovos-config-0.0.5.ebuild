@@ -20,5 +20,7 @@ DEPEND="dev-python/websocket-client dev-python/pyee"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
+export MYCROFT_LOOSE_REQUIREMENTS=true
+
 distutils_enable_tests pytest
 
