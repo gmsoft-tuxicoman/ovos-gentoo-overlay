@@ -3,6 +3,10 @@
 
 EAPI=8
 
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_10 )
+inherit distutils-r1
+
 DESCRIPTION="Client library for interaction with all compatible ovos-core backend services"
 HOMEPAGE="https://github.com/OpenVoiceOS/ovos-backend-client"
 SRC_URI="https://github.com/OpenVoiceOS/ovos-backend-client/archive/refs/tags/V${PV/_alpha/a}.tar.gz -> ${P}.tar.gz"
@@ -15,3 +19,5 @@ KEYWORDS="~amd64"
 DEPEND="dev-python/json_database app-misc/ovos-utils"
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+distutils_enable_tests pytest

@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="OVOS precise lite models runner."
 HOMEPAGE="https://github.com/OpenVoiceOS/precise_lite_runner"
 SRC_URI="https://github.com/OpenVoiceOS/precise_lite_runner/archive/refs/tags/${PV/_alpha/a}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/precise_lite_runner-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
