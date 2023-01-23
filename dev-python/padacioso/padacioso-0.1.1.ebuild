@@ -10,7 +10,9 @@ inherit distutils-r1
 DESCRIPTION="dead simple regex based intent parser"
 HOMEPAGE="https://github.com/OpenJarbas/padacioso"
 SRC_URI="https://github.com/OpenJarbas/padacioso/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${PN/-/_}-${PV}"
+
+
+DEPENDS="dev-python/simplematch"
 
 LICENSE="Apache-2.0"
 SLOT="0"
