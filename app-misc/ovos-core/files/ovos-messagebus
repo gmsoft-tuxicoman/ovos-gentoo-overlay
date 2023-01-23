@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+# Copyright 2023 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="ovos-messagebus daemon"
+description="OVOS messagebus"
+command=/usr/bin/python3
+command_args="-m mycroft.messagebus.service"
+command_user="ovos:ovos"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+

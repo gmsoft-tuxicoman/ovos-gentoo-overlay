@@ -23,6 +23,7 @@ DEPEND="acct-user/ovos
 		dev-python/pyaudio
 		dev-python/speechrecognition
 		dev-python/tornado
+		dev-python/padacioso
 		dev-python/psutil
 		dev-python/python-dateutil
 		dev-python/pyyaml
