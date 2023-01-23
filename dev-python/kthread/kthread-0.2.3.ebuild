@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Killable threads in Python!"
 HOMEPAGE="https://github.com/munshigroup/kthread"
-SRC_URI="https://files.pythonhosted.org/packages/aa/91/14cf7dee7188db4dfe1270737bff69bc81b532d8ab75c5e4098a8d5ae1a7/${P}.tar.gz"
+SRC_URI="https://files.pythonhosted.org/packages/18/9b/aa1b48c3cf6e1a914ee5eee1fed77cd7217fb0a35c07c345da4ec5215cae/kthread-0.2.3.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
