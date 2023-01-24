@@ -61,6 +61,10 @@ python_install_all() {
 	fowners ovos:ovos /var/log/ovos
 
 	doinitd "${FILESDIR}/ovos-messagebus"
+	doinitd "${FILESDIR}/ovos-audio"
+	doinitd "${FILESDIR}/ovos-skills"
+	doinitd "${FILESDIR}/ovos-voice"
+	doinitd "${FILESDIR}/ovos"
 
 
 	insinto /etc/OpenVoiceOS

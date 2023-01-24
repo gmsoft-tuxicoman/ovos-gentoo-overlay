@@ -1,0 +1,20 @@
+#!/sbin/openrc-run
+# Copyright 2023 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="ovos daemon"
+description="OVOS"
+
+depend() {
+	need ovos-voice
+	need ovos-audio
+	need ovos-skills
+}
+
+start() {
+	einfo "All OVOS dependencies started"
+}
+
+stop() {
+	einfo "You need to stop all the OVOS services manually"
+}

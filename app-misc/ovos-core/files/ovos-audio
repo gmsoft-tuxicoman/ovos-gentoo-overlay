@@ -1,0 +1,15 @@
+#!/sbin/openrc-run
+# Copyright 2023 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+name="ovos-audio daemon"
+description="OVOS audio"
+command=/usr/bin/python3
+command_args="-m mycroft.audio"
+command_user="ovos:ovos"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+	need ovos-messagebus
+}
