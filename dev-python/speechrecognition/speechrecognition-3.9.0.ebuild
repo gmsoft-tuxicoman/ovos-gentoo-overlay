@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 
-RDEPEND="app-python/requests"
+RDEPEND="dev-python/requests"
 
 S="${WORKDIR}/speech_recognition-${PV}"
 
