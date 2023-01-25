@@ -19,6 +19,6 @@ DEPEND="dev-python/pocketsphinx app-misc/ovos-plugin-manager dev-python/phoneme-
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-MYCROFT_LOOSE_REQUIREMENTS=true
+export MYCROFT_LOOSE_REQUIREMENTS=true
 
 distutils_enable_tests pytest
