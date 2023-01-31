@@ -16,7 +16,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="app-misc/ovos-precise-lite-runner app-misc/ovos-plugin-manager app-misc/ovos-utils"
+DEPEND="app-misc/ovos-precise-lite-runner app-misc/ovos-plugin-manager app-misc/ovos-utils app-misc/ovos-precise-lite-models"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
