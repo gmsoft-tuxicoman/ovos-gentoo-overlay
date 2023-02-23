@@ -67,9 +67,9 @@ python_install_all() {
 	doinitd "${FILESDIR}/ovos"
 
 
-	insinto /etc/OpenVoiceOS
-	doins "${FILESDIR}/ovos.conf"
-	fowners ovos:ovos -R /etc/OpenVoiceOS
+	insinto /etc/mycroft
+	doins "${FILESDIR}/mycroft.conf"
+	fowners ovos:ovos -R /etc/mycroft
 }
 
 distutils_enable_tests pytest
